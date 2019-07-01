@@ -1,0 +1,17 @@
+package:
+  name: singlecell
+  version: "1.0.0"
+
+source:
+  path: .
+
+requirements:
+  run:
+    - python
+    - "pandas>=0.24.0"
+    - "numpy>=1.15.4"
+
+about:
+  home: https://github.com/edwinv87/singlecell
+  license: MIT
+  summary: "A python class for managing single-cell RNA-seq data."

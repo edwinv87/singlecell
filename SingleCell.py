@@ -181,11 +181,12 @@ class SingleCell:
         
         cellarray = self.getCellColumnValues(column)
         cells = cellarray
-        cell_types = [] # Distinct cell labels in the cellarray
+
+        cell_types = np.array([]) # Distinct cell labels in the cellarray
 
         # Find distinct cell lables in the cell array
         while (cells.size != 0):
-            cell_types.append(cells[0])
+            cell_types = np.append(cell_types, cells[0])
             mask = cells != cells[0]
             cells = cells[mask]
 
@@ -198,10 +199,10 @@ class SingleCell:
         cellarray = self.getCellColumnValues(column)
         cell_types = self.getDistinctCellTypes(column)
 
-        num_cell_labels = np.zeros(cellarray.size, cellarray.dtype) # Numeric cell labels
+        num_cell_labels = np.zeros(cellarray.size) # Numeric cell labels
 
         # Find numeric cell labels for the cell array 
-        for i in range(len(cell_types)):
+        for i in range(cell_types.size):
             mask = cellarray == cell_types[i]
             num_cell_labels[mask] = i
         
