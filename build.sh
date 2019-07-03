@@ -1,1 +1,3 @@
-cp SingleCell.py $PREFIX
+#!/bin/bash
+
+$PYTHON setup.py install

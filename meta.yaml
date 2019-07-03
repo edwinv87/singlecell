@@ -1,15 +1,18 @@
 package:
   name: singlecell
-  version: "1.0.0"
+  version: "1.0.1"
 
 source:
   path: .
 
 requirements:
+  build:
+    - python
+    - setuptools
   run:
     - python
-    - "pandas>=0.24.0"
-    - "numpy>=1.15.4"
+    - pandas
+    - numpy
 
 about:
   home: https://github.com/edwinv87/singlecell
