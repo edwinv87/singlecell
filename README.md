@@ -12,6 +12,7 @@ The SingleCell class can be used to create an object which stores single-cell ge
 
 ```python
 import pandas as pd
+from singlecell import SingleCell
 
 dataset = 'biase'
 
