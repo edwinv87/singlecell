@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Usage"
-permalink: /usage/
+permalink: /usage
+---
 
 # Using SingleCell class
 
