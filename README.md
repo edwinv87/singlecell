@@ -1,6 +1,6 @@
 # Single Cell
 
-SingleCell is a python class for managing single-cell RNA-seq data. It contains three pandas dataframes; `data` for holding gene expression values (counts/normalized counts), `genedata` for holding more information about the genes e.g., gene names, and `celldata` which contains more information about cells such as cell types, labels etc. It is similar in concept to R package SingleCellExperiment on Bioconductor (<https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html).>
+SingleCell is a python class for managing single-cell RNA-seq data. It contains three pandas dataframes; `data` for holding gene expression values (counts/normalized counts), `genedata` for holding more information about the genes e.g., gene names, and `celldata` which contains more information about cells such as cell types, labels etc. It is similar in concept to R package SingleCellExperiment on Bioconductor <https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html>.
 
 ## Installation
 
@@ -8,7 +8,7 @@ The singlecell package can be easily installed from Anaconda Cloud using the Ana
 
 `conda install -c edwinvans singlecell`
 
-The user can also checkout the anaconda cloud page for more information <https://anaconda.org/edwinvans/singlecell.> The source code is available here on the GitHub repository.
+The user can also checkout the anaconda cloud page for more information <https://anaconda.org/edwinvans/singlecell>. The source code is available here on the GitHub repository.
 
 ## Usage
 
@@ -33,7 +33,7 @@ genedata = pd.read_csv(genedata_path, index_col = 0)
 sc = SingleCell(dataset, data, celldata, genedata)
 ```
 
-In the above example, a SingleCell object, sc, was ceated by passing the dataset name and the main data, the cell data and gene data as pandas dataframes. Pandas is a powerpul python library for creating data structures from a variety of sources. Pandas can open and read data from numerous differernt file types such as csv files and creating dataframes from it. This enables the user to create SingleCell objects from different data file types. For more information on pandas see <https://pandas.pydata.org/>
+In the above example, a SingleCell object, sc, was ceated by passing the dataset name and the main data, the cell data and gene data as pandas dataframes. Pandas is a powerpul python library for creating data structures from a variety of sources. Pandas can open and read data from numerous differernt file types such as csv files and creating dataframes from it. This enables the user to create SingleCell objects from different data file types. For more information on pandas see <https://pandas.pydata.org/>.
 
 ## Contact
 
